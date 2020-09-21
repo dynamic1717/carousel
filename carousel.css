@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.dots-container {
+    display: flex;
+}
+
+.dot {
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dot-current {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.carousel {
+    margin-top: 10px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+}
+
+.buttons-container button {
+    margin: 7px;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.buttons-container button:not(:last-child) {
+    border-radius: 50%;
+}
+
+.buttons-container button:hover {
+    background-color: rgb(192, 192, 192);
+}
