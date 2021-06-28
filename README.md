@@ -1,1 +1,4 @@
-Self-made carousel: http://f0457791.xsph.ru/carousel/
+Self-made carousel
+--
+
+https://dynamic1717-carousel.netlify.app/
